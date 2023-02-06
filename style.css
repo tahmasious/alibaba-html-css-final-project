@@ -89,7 +89,9 @@ hr {
 .justify-between {
     justify-content: space-between;
 }
-
+.align-start {
+    align-items: start;
+}
 .blue-btn {
     padding: 0.25rem 3rem;
     line-height: 30px;
@@ -494,4 +496,80 @@ main aside {
 
 .date-picker {
     margin-bottom: 10px;
+}
+
+/* foooooooooter  */
+
+footer {
+    border-top: solid 1px var(--grays-150);
+    background-color: #fff;
+    color: #2b2f33;
+}
+
+footer .alibaba-logo {
+    display: block;
+    height: 30px;
+    float: left;
+}
+
+footer .fast-link {
+    margin: 0 0 0 50px;
+}
+
+footer .fast-link h4{
+    margin: 0 0 20px 0;
+}
+
+footer .fast-link li{
+    line-height: 30px;
+}
+footer .summary-container {
+    flex-grow: 10;
+}
+footer .logo-container {
+    height: 30px;
+    margin-bottom: 20px;
+}
+footer .first-row-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    gap: 1rem;
+}
+footer .summary-container p{
+    text-align: left;
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+}
+
+footer .certificate-logo-container img{
+    width: 69px;
+    height: 69px;
+    padding: 1px;
+    border: solid 1px rgba(0, 0, 0, .12);
+    border-radius: 0.5rem;
+}
+footer .certificate-logo-container {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin: 40px 0;
+}
+
+footer .other-links {
+    line-height: 18.6px;
+    color: #6C7680;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+footer .other-links .dot {
+    background-color: #6C7680;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: none;
 }
