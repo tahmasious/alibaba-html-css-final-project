@@ -120,6 +120,8 @@ hr {
 }
 /* header */
 
+
+
 header {
     color: RGB(75, 82, 89);;
     border-bottom: solid 1px rgba(0, 0, 0, 0.12);
@@ -150,8 +152,9 @@ header .header-menu {
     align-items: center;
 }
 
-header .header-menu li:not(.divider) {
+header .main-menu-item {
     padding: 10px;
+    position: relative;
 }
 
 header .divider {
@@ -198,6 +201,29 @@ header .sub-header {
     line-height: 30px;
 }
 
+header .sub-menu-divider {
+    background-color: #727b84;
+    height: 1px;
+    width: 100%;
+    padding: 0;
+    
+}
+header .sub-menu-item {
+    padding: 10px 0;
+}
+header .sub-menu {
+    position: absolute;
+    top: 80%;
+    transition: all 0.15s ease-in-out;
+    visibility: hidden;
+    --tw-shadow: 0 3px 10px 0 rgba(0, 0, 0, .12), 0 10px 10px -6px rgba(0, 0, 0, .12);
+    --tw-shadow-colored: 0 3px 10px 0 var(--tw-shadow-color), 0 10px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+header .menu-link-container:hover .sub-menu {
+    visibility: inherit;
+    top: 90%;
+}
 /* main */
 
 main {
