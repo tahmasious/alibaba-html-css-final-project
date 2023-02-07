@@ -1,0 +1,38 @@
+.gallery-container {
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.main-image-container {
+    width: 50%;
+    background-image: url("./img/test.png");
+    height: calc((180px * 2) + 5px);
+    background-size: cover;
+    background-position: center;
+}
+.small-images-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.small-images-container div {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+#up-right-container {
+    background-image: url("./img/test.png");
+}
+#up-left-container {
+    background-image: url("./img/test.png");
+}
+#down-left-container {
+    background-image: url("./img/test.png");
+}
+#down-right-container {
+    background-image: url("./img/test.png");
+}
