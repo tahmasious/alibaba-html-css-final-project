@@ -22,7 +22,7 @@ ol, ul {
 
 /* general */
 .container {
-    max-width: 1200px;
+    max-width: calc(100vw * 0.78);
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -124,7 +124,7 @@ hr {
 
 header {
     color: RGB(75, 82, 89);
-    max-width: 1200px;
+    max-width: calc(100vw * 0.78);
     margin: auto;
 }
 
@@ -133,10 +133,6 @@ header .main-header{
     justify-content: space-between;
     align-items: center;
     row-gap: 20px;
-    /* padding-left: 24px;
-    padding-right: 24px;
-    margin-right: 40px;
-    margin-left: 40px; */
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -199,7 +195,7 @@ header .logo-description{
     margin-right: 120px;
     margin-left: 120px;
     line-height: 30px;
-    max-width: 1200px;
+    max-width: calc(100vw * 0.78) ;
     margin: auto;
 }
 .sub-header-container {
@@ -214,8 +210,8 @@ header .logo-description{
     z-index: 20;
 }
 header .sub-menu-divider {
-    background-color: #727b84;
-    height: 1px;
+    background-color: #727b845a;
+    height: 0.5px;
     width: 100%;
     padding: 0;
     
@@ -231,6 +227,7 @@ header .sub-menu {
     --tw-shadow: 0 3px 10px 0 rgba(0, 0, 0, .12), 0 10px 10px -6px rgba(0, 0, 0, .12);
     --tw-shadow-colored: 0 3px 10px 0 var(--tw-shadow-color), 0 10px 10px -6px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+    z-index: 30;
 }
 header .menu-link-container:hover .sub-menu {
     visibility: inherit;
@@ -252,47 +249,6 @@ main {
     padding-bottom: 23px;
 }
 /* image gallery */
-/* .big-image-container {
-    display: flex;
-    align-items: center;
-    width: 50%;
-}
-.other-image-container {
-    width: 50%;
-}
-.image-gallery-container {
-    /* border: 2px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    gap: 5px;
-    height: 300px;
-}
-.image-gallery-container  img {
-    width: 100%;
-}
-.row-container {
-    display: flex;
-    row-gap: 5px;
-    gap: 5px;
-}
-.row-container:nth-of-type(1){
-    margin-bottom: 5px;
-}
-.more-image-btn {
-    display: flex;
-    position: absolute;
-    background-color: #FFFFFF;
-    left: 23px;
-    bottom: 81px;
-    padding: 6px;
-    gap: 8px;
-    font-size: 0.8rem;
-    border-radius: 50px;
-    color: #4b5259;
-} */
 
 .more-image-btn {
     display: flex;
