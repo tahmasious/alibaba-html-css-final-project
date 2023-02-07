@@ -2,6 +2,9 @@
     font-family: 'alibaba-regular';
     src: url("./fonts/alibaba-regular.woff2-5d2979c4.woff2");
 }
+
+/* general */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,10 +20,6 @@ ol, ul {
 	list-style: none;
 }
 
-
-
-
-/* general */
 .container {
     max-width: calc(100vw * 0.78);
     margin: auto;
@@ -119,8 +118,6 @@ hr {
     margin-bottom: 30px;
 }
 /* header */
-
-
 
 header {
     color: RGB(75, 82, 89);
@@ -507,6 +504,7 @@ main aside {
 }
 
 /* side bar */
+
 .math-rooms {
     position: -webkit-sticky;
     position: sticky;
@@ -543,7 +541,7 @@ main aside {
     margin-bottom: 10px;
 }
 
-/* foooooooooter  */
+/* footer  */
 
 footer {
     border-top: solid 1px var(--grays-150);
