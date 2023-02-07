@@ -4,7 +4,12 @@
 }
 
 /* general */
-
+html {
+    scroll-behavior: smooth;
+}
+#map, #rooms, #feature, #rules {
+    scroll-margin-top: 70px;
+}
 * {
     margin: 0;
     padding: 0;

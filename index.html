@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -110,22 +110,30 @@
         </div>
     </header>
     <!-- second row in header -->
-    <div class="sub-header-container">
+    <nav class="sub-header-container">
         <div class="sub-header">
             <span class="sub-header-link-container">
-                امکانات و ویژگی‌ها
+                <a href="#feature">
+                    امکانات و ویژگی‌ها
+                </a>
             </span>
             <span class="sub-header-link-container">
-                مکان‌های مهم اطراف هتل
+                <a href="#map">
+                    مکان‌های مهم اطراف هتل
+                </a>
             </span>
             <span class="sub-header-link-container">
-                اتاق‌ها
+                <a href="#rooms">
+                    اتاق‌ها
+                </a>
             </span>
             <span class="sub-header-link-container">
-                قوانین و مقررات
+                <a href="#rules">
+                    قوانین و مقررات
+                </a>
             </span>
         </div>
-    </div>
+    </nav>
     <main>
         <div class="container">
             <!-- breadcrumb of this page  -->
@@ -173,7 +181,7 @@
             <div class="content-container">
                 <article>
                     <!-- feature list header -->
-                    <div class="feature-header-container">
+                    <div class="feature-header-container" id="feature">
                         <h3>امکانات و ویژگی‌ها</h3>
                         <a href="#" class="all-feautre-link-container">
                             مشاهده همه امکانات 
@@ -236,12 +244,12 @@
                         </ul>
                     </div>
                     <!-- map, test and temp -->
-                    <div class="map">
+                    <div class="map" id="map">
                         <h3>مکان های مهم اطراف هتل</h3>
                         <img src="./img/map.jpg" alt="temp">
                     </div>
                     <!-- list of rooms -->
-                    <div class="rooms-container">
+                    <div class="rooms-container" id="rooms">
                         <h3>اتاق ها</h3>
                         <div class="room-card flex">
                             <!-- room title -->
@@ -357,7 +365,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="rules">
+                    <!-- rules of the hotel -->
+                    <div class="rules" id="rules">
                         <h3>قوانین و مقررات</h3>
                         <div class="rule-container card flex">
                             <div class="check-in-check-out">
