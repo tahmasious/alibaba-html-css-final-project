@@ -86,7 +86,7 @@ hr {
 
 .is-link {
     transition:all 0.1s ease-in-out;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid transparent;
 }
 .is-link:hover {
