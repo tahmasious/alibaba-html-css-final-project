@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'alibaba-regular';
     src: url("./fonts/alibaba-regular.woff2-5d2979c4.woff2");
+    /* src: url("./fonts/alibaba-black.woff2-41970917.woff2"); */
+    /* src: url("./fonts/alibaba-bold.woff2-bbb24413.woff2"); */
 }
 
 /* general */
@@ -26,7 +28,7 @@ ol, ul {
 }
 
 .container {
-    max-width: calc(100vw * 0.78);
+    max-width: min(calc(100vw * 0.78), 1200px);
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -81,6 +83,16 @@ hr {
 .alert-txt {
     color: #DC3545;
 }
+
+.is-link {
+    transition:all 0.1s ease-in-out;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.is-link:hover {
+    border:1px solid #C9E3F8;
+    background-color: #F2F9FF;
+}
 .justify-center{
     justify-content: center;
 }
@@ -107,8 +119,11 @@ hr {
     text-align: center;
     margin: auto;
     display: table;
+    transition: all 0.1s ease-in-out;
 }
-
+.blue-btn:hover {
+    background-color: #00569E;
+}
 .card {
     border: solid 1px rgba(0, 0, 0, 0.12);
     color: RGB(43, 47, 51);
@@ -126,7 +141,7 @@ hr {
 
 header {
     color: RGB(75, 82, 89);
-    max-width: calc(100vw * 0.78);
+    max-width: min(calc(100vw * 0.78), 1200px);
     margin: auto;
 }
 
@@ -179,8 +194,15 @@ header .menu-link-container{
     align-items: center;
     column-gap: 10px;
     padding: 10px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
 }
-
+header .menu-link-container:hover {
+    background-color: #00000008;
+}
+header .menu-link-container:active {
+    box-shadow: inset 0 0 10px #6f6f6f;
+}
 header .logo-container{
     display: flex;
     align-items: center;
@@ -197,7 +219,7 @@ header .logo-description{
     margin-right: 120px;
     margin-left: 120px;
     line-height: 30px;
-    max-width: calc(100vw * 0.78) ;
+    max-width: min(calc(100vw * 0.78), 1200px);
     margin: auto;
 }
 .sub-header-container {
@@ -250,6 +272,9 @@ main {
     color: RGB(108, 118, 128);
     padding-bottom: 23px;
 }
+
+
+
 /* image gallery */
 
 .more-image-btn {
@@ -513,8 +538,9 @@ main aside {
 .math-rooms {
     position: -webkit-sticky;
     position: sticky;
-    top: 4rem;
+    top: 5rem;
     line-height: 30px;
+    margin-top: 10px;
 }
 .start-price {
     display: table;
@@ -537,6 +563,7 @@ main aside {
     border: solid 1px rgba(0, 0, 0, .12);  
     padding: 5px;
     line-height: 20px;
+    border-radius: 10px;
 }
 .picker > div {
     text-align: right;
@@ -620,4 +647,22 @@ footer .other-links .dot {
     height: 4px;
     border-radius: 50%;
     border: none;
+}
+
+
+/* responsive main and aside */
+
+@media screen and (max-width:768px) {
+    aside, article {
+        width: 100% !important;
+    }
+    .content-container {
+        display: block;
+    }
+    .phone-hide {
+        display: none !important;
+    }
+    footer .first-row-container {
+        display: block;
+    }
 }

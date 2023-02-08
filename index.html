@@ -2,11 +2,33 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/favicon-32x32.png" color="#FDB713">
-    <link rel="stylesheet" href="style.css">
     <title>هتل سما 1 بهترین قیمت و پشتیبانی | علی بابا</title>
+    <!-- seo meta tags -->
+    <meta property="og:description" content="هتل سما در بهترین نقطه جزیره قشم واقع گردیده است. نزدیکی این هتل به مراکز تجاری و بازارها، یکی از بارزترین مزایای این هتل بشمار می‌آید. هتل سما  تلاش دارد،  باکادری آموزش دیده، لحظاتی به یاد ماندنی را برای مسافرین دراین جزیره زیبا به ارمغان آورد.
+رستوران این هتل با ظرفیت 50 نفر آماده طبخ غذاهای سنتی ایرانی است.">
+    <meta property="og:title" content="هتل سما 1 بهترین قیمت و پشتیبانی | علی بابا">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:site_name" content="علی‌بابا">
+    <meta property="og:type" content="website">
+    <meta http-equiv="Content-Language" content="fa" />
+    <meta name="robots" content="index,follow" >
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icon link -->
+    <link rel="icon" href="./img/favicon-32x32.png" color="#FDB713">
+    
+    <!-- arabic numbars -->
+    <script type="text/javascript">
+        var replaceDigits = function() {
+            var map = ["&\#1776;","&\#1777;","&\#1778;","&\#1779;","&\#1780;","&\#1781;","&\#1782;","&\#1783;","&\#1784;","&\#1785;"]
+            document.body.innerHTML = document.body.innerHTML.replace(/\d(?=[^<>]*(<|$))/g, function($0) { return map[$0]});
+        }
+        window.onload = replaceDigits;
+    </script>
+
 </head>
 <body>
     <header>
@@ -25,7 +47,7 @@
                         </div>
                     </div>
                     <!-- menu (main menue) -->
-                    <ul class="header-menu">
+                    <ul class="header-menu phone-hide">
                         <li class="main-menu-item">
                             <a href="#" class="menu-link-container">
                                 <span>بلیط</span>
@@ -83,7 +105,7 @@
                     </ul>
                 </nav>
                 <!-- left side of first row in header -->
-                <div class="left-header">
+                <div class="left-header phone-hide">
                     <ul class="left-header-container">
                         <li>
                             <a href="#">
@@ -168,7 +190,7 @@
                     <span>3 ستاره</span>
                     <span>بلوار وليعصر</span>
                     </div>
-                    <div class="share-link-container">
+                    <div class="share-link-container is-link">
                         <a href="#" class="share-link-btn">
                             اشتراک گذاری
                             <svg viewBox="0 0 24 24" width="1rem" height="1rem" fill="currentColor" data-v-6bdbc8e3=""><path d="M17.625 3a3.375 3.375 0 1 1-2.618 5.505l-5.364 2.65a3.381 3.381 0 0 1 0 1.69l5.364 2.65a3.375 3.375 0 1 1-.665 1.345l-5.388-2.662a3.375 3.375 0 1 1 0-4.355l5.388-2.663A3.375 3.375 0 0 1 17.625 3Z"></path></svg>
@@ -183,10 +205,12 @@
                     <!-- feature list header -->
                     <div class="feature-header-container" id="feature">
                         <h3>امکانات و ویژگی‌ها</h3>
-                        <a href="#" class="all-feautre-link-container">
-                            مشاهده همه امکانات 
-                            <svg viewBox="0 0 24 24" width="14px" height="14px" fill="currentColor" data-v-3dfc04ae=""><path d="M16.698 21.266a.75.75 0 0 1-1.08 1.037l-.066-.069-8.25-9.75a.75.75 0 0 1-.058-.89l.058-.078 8.25-9.75a.75.75 0 0 1 1.202.893l-.056.075L8.858 12l7.84 9.266Z"></path></svg>
-                        </a>
+                        <div>
+                            <a href="#" class="all-feautre-link-container is-link">
+                                مشاهده همه امکانات 
+                                <svg viewBox="0 0 24 24" width="14px" height="14px" fill="currentColor" data-v-3dfc04ae=""><path d="M16.698 21.266a.75.75 0 0 1-1.08 1.037l-.066-.069-8.25-9.75a.75.75 0 0 1-.058-.89l.058-.078 8.25-9.75a.75.75 0 0 1 1.202.893l-.056.075L8.858 12l7.84 9.266Z"></path></svg>
+                            </a>
+                        </div>
                     </div>
                     <!-- feature list container -->
                     <div class="features-container">
@@ -424,14 +448,14 @@
                 </article>
                 <aside>
                     <div class="card math-rooms">
-                        <div class="date-picker picker blue-btn flex justify-between">
+                        <div class="date-picker picker flex justify-between">
                             <div>
                                 <div class="w-full ">1401/11/18 – 1401/11/19</div>
                                 <span>1 شب</span>
                             </div>
                             <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="md:mr-3" data-v-6af3b611=""><path d="M21.266 7.302a.75.75 0 0 1 1.037 1.08l-.069.066-9.75 8.25a.75.75 0 0 1-.89.058l-.078-.058-9.75-8.25a.75.75 0 0 1 .893-1.202l.075.056L12 15.142l9.266-7.84Z"></path></svg>
                         </div>
-                        <div class="person-picker picker blue-btn flex justify-between"><div>
+                        <div class="person-picker picker flex justify-between"><div>
                             <div class="w-full ">1 بزرگسال</div>
                                 <span>1 اتاق </span>
                             </div>
@@ -529,4 +553,8 @@
         </div>
     </footer>
 </body>
+<noscript>
+    Your browser does not support JavaScript!
+    Change browser or device !
+</noscript>
 </html>
